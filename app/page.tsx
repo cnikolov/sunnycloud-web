@@ -1,113 +1,155 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="">
+      <div className="md:flex justify-center items-center">
+        <div className="flex-1">
+          <div className="font-semibold text-xl">Build faster together.</div>
+          <div className="mt-3">
+            Our goal is to provide top-quality services that help our customers
+            save money and achieve their business objectives. We offer a range
+            of consultation services, including website design and development,
+            search engine optimization, and social media marketing.
+          </div>
+          <Link
+            href={"/"}
+            className="inline-block uppercase border border-black mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Get In Touch
+          </Link>
+        </div>
+        <div className="l:ml-6 mt-12 w-full mb-10 flex-1">
+          <Image
+            className="m-auto"
+            width={500}
+            height={640}
+            src="/homepage-call-to-action-image.png"
+            alt={""}
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* Characteristcs */}
+      <div className="w-full">
+        <div className="font-semibold text-xl text-center">
+          Customer Benefits & Features
+        </div>
+        <div className="flex flex-wrap border-2 border-black border-collapse">
+          <div className="flex-1 flex-col md:flex-row bg-orange-500 px-8 pt-6">
+            <div className="uppercase rounded-full mx-auto w-48 bg-black text-white text-center font-semibold p-4">
+              Security
+            </div>
+            <ul className="list-disc mt-8 ">
+              <li>Implement a strong identity foundation</li>
+              <li>Secure your data and applications</li>
+              <li>Protect against advanced threats</li>
+              <li>
+                Realtime analysis and AI Machine Learning to prevent frauds.
+              </li>
+              <li>Prevent bots from crawling your applicaiton.</li>
+            </ul>
+          </div>
+          <div className="flex-1 flex-col md:flex-row bg-gray-200 px-8 pt-6  ">
+            <div
+              className="uppercase rounded-full mx-auto w-48 bg-gray-200
+             text-black text-center font-semibold p-4 border-black border-2"
+            >
+              Development
+            </div>
+            <ul className="list-inside mt-8 ">
+              <li className="text-lg font-semibold">Backend Development</li>
+              <li>C Sharp Development</li>
+              <li>Javascript/Typescript</li>
+              <li className="text-lg font-semibold mt-4">
+                Frontend Development
+              </li>
+              <li>React, NextJS 13 or above</li>
+              <li>VueJS, NuxtJS</li>
+              <li>Angular</li>
+              <li className="text-lg font-semibold mt-4">Databases</li>
+              <li>SQL Server, MySQL, MongoDB, Postgres</li>
+              <li className="text-lg font-semibold mt-4">Cloud</li>
+              <li>Azure, AWS</li>
+              <li className="text-lg font-semibold mt-4">Other</li>
+              <li>Containers, IaC, Pipelines, Migration for legacy apps.</li>
+            </ul>
+          </div>
+          <div
+            className=" flex-1 flex-col 
+          md:flex-row bg-gray-100 px-8 pt-6 "
+          >
+            <div
+              className="uppercase rounded-full mx-auto w-48 bg-gray-100
+             text-black text-center font-semibold p-4 border-black border-2"
+            >
+              Performance
+            </div>
+            <ul className="list-inside mt-8 ">
+              <li className="text-lg font-semibold">Backend Development</li>
+              <li>C Sharp Development</li>
+              <li>Javascript/Typescript</li>
+              <li className="text-lg font-semibold mt-4">
+                Frontend Development
+              </li>
+              <li>React, NextJS 13 or above</li>
+              <li>VueJS, NuxtJS</li>
+              <li>Angular</li>
+              <li className="text-lg font-semibold mt-4">Databases</li>
+              <li>SQL Server, MySQL, MongoDB, Postgres</li>
+              <li className="text-lg font-semibold mt-4">Cloud</li>
+              <li>Azure, AWS</li>
+              <li className="text-lg font-semibold mt-4">Other</li>
+              <li>Containers, IaC, Pipelines, Migration for legacy apps.</li>
+            </ul>
+          </div>
+          <div
+            className=" flex-1 flex-col 
+          md:flex-row bg-gray-300 px-8 pt-6 "
+          >
+            <div
+              className="uppercase rounded-full mx-auto w-48 bg-gray-300
+             text-black text-center font-semibold p-4 border-black border-2"
+            >
+              Cost Optimization
+            </div>
+            <ul className="list-inside list-disc mt-8 ">
+              <li>
+                Implement cloud financial management Adopt a consumption model
+              </li>
+              <li>Adopt a consumption model</li>
+              <li>Measure overall efficiency</li>
+              <li>Stop spending money on undifferentiated heavy lifting</li>
+              <li>Analyze and attribute expenditure</li>
+            </ul>
+          </div>{" "}
+          <div
+            className=" flex-1 flex-col 
+          md:flex-row bg-marketing px-8 pt-6 "
+          >
+            <div
+              className="uppercase rounded-full mx-auto w-48 bg-black
+             text-white text-center font-semibold p-4 border-black border-2"
+            >
+              Marketing
+            </div>
+            <ul className="list-inside list-disc mt-8 text-white ">
+              <li>
+                Implement cloud financial management Adopt a consumption model
+              </li>
+              <li>Adopt a consumption model</li>
+              <li>Measure overall efficiency</li>
+              <li>Stop spending money on undifferentiated heavy lifting</li>
+              <li>Analyze and attribute expenditure</li>
+            </ul>
+            <div className="text-white mt-12">
+              <p className="text-8xl">1,2M</p>
+              <p className="text-xl">Consents a day.</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <div className="bg-white py-12"></div>
     </main>
-  )
+  );
 }
