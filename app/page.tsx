@@ -149,7 +149,128 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white py-12"></div>
+      {/* Company Logos */}
+      <div className="bg-black flex flex-wrap p-8">
+        <Image
+          alt="Pitch Logo"
+          src={"/logo-1.png"}
+          height={228}
+          width={228}
+        ></Image>
+        <Image
+          alt="Wire Logo"
+          src={"/logo-2.png"}
+          height={228}
+          width={228}
+        ></Image>
+        <Image
+          alt="Job Line Logo"
+          src={"/logo-3.png"}
+          height={228}
+          width={228}
+        ></Image>
+        <Image
+          alt="Gabo Logo"
+          src={"/logo-4.png"}
+          height={228}
+          width={228}
+        ></Image>
+        <Image
+          alt="Real Wave Logo"
+          src={"/logo-5.png"}
+          height={228}
+          width={228}
+        ></Image>
+        <Image
+          alt="LoudNick Logo"
+          src={"/logo-6.png"}
+          height={228}
+          width={228}
+        ></Image>
+      </div>
+      {/* Team Features */}
+      <div className="my-8">
+        <h2 className="font-semibold text-xl text-center font-archivo mb-6">
+          Team Features
+        </h2>
+        <p className="text-center text-md font-semibold">
+          We are very excited to show you our top featuring within the team.
+        </p>
+      </div>
+      {/* Feature Wrapper */}
+      <div className="lg:flex my-8">
+        {/* Feature Container */}
+        <div className="border-2 bg-brand border-black p-4 pb-8 lg:max-w-sm mx-3 mb-8">
+          <div className="">
+            <Image
+              height={250}
+              width={350}
+              alt="design illustration"
+              src={"/team-features-02.png"}
+            ></Image>
+          </div>
+          <div className=" font-semibold text-xl my-6">Design</div>
+          <p className="">
+            We are using utility first approach in our designs. Meaning that
+            each design is built from the ground up using best practises and
+            tools familiar to us.
+          </p>
+          <p className="mt-3 ">
+            The problem with component based design libraries is that your brand
+            can quickly become invisible because it looks like everyone else’s
+            website or product.
+          </p>
+        </div>
+        {/* Feature Container */}
+        <div className="border-2 bg-marketing border-black p-4 pb-8 lg:max-w-sm mx-3 mb-8">
+          <div className="">
+            <Image
+              height={250}
+              width={350}
+              alt="design illustration"
+              src={"/team-features-02.png"}
+            ></Image>
+          </div>
+          <div className="text-white font-semibold text-xl my-6">
+            Cloud Based
+          </div>
+          <p className="text-white">
+            It is no secret; that cloud computing is revolutionizing the IT
+            industry. All our team members are certified by the end of their
+            probation.
+          </p>
+          <p className="mt-3 text-white">
+            Whenever you are planning to move to cloud or you are already there.
+            We can help you by allocating the right resource for the right task,
+            and securing your cloud so you can rest assure. We’re offering cloud
+            native development as well.
+          </p>
+        </div>
+        {/* Feature Container */}
+        <div className="border-2 bg-black border-black p-4 pb-8 lg:max-w-sm mx-3 mb-8">
+          <div className="">
+            <Image
+              height={250}
+              width={350}
+              alt="design illustration"
+              src={"/team-features-03.png"}
+            ></Image>
+          </div>
+          <div className="text-white font-semibold text-xl my-6">
+            Flexible and Smart
+          </div>
+          <p className="text-white">
+            We are offering On-Demand development services for all supported
+            platforms long term support, so you can use our help to finish your
+            sprints on time, and get into market quick.
+          </p>
+          <p className="mt-3 text-white">
+            Our long term development contracts are already built in mind with
+            E2E testing and leading industry practises so we can minimize risk
+            for your brand and can continue to improve and innovate.
+          </p>
+        </div>
+      </div>
     </main>
   );
 }
