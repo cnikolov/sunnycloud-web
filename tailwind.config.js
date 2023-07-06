@@ -11,9 +11,12 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "paint-pattern": "url('/paint-pattern.png')",
+        "team-image":
+          "linear-gradient(180deg,#000000 50%,rgba(246,103,31,0.7) 50%),url('/team-gathered-in-office.jpg') ",
       },
       fontFamily: {
-        archivo: ["Archivo", "sans-serif"],
+        archivo: ["Archivo", "Helvetica", "Arial", "Lucida", "sans-serif"],
       },
       colors: {
         brand: "#f6f2ea",

@@ -248,7 +248,7 @@ export default function Home() {
         </div>
         {/* Feature Container */}
         <div className="border-2 bg-black border-black p-4 pb-8 lg:max-w-sm mx-3 mb-8">
-          <div className="">
+          <div className="content-center w-full">
             <Image
               height={250}
               width={350}
@@ -269,6 +269,164 @@ export default function Home() {
             E2E testing and leading industry practises so we can minimize risk
             for your brand and can continue to improve and innovate.
           </p>
+        </div>
+      </div>
+      {/* Mobile Features */}
+      <div className="xl:flex  py-8 mt-14 justify-center align-middle">
+        <div className="flex-1 relative w-full h-[800px] mb-9">
+          <Image
+            className="absolute top-0 left-0 right-0 mx-auto bg-paint-pattern bg-center bg-cover"
+            width={800}
+            alt="app illustration on a mobile device"
+            height={800}
+            src={"/saas_mobile_001.png"}
+          ></Image>
+        </div>
+        <div className="flex-1 ml-9 font-archivo">
+          <p className="text-marketing font tracking-widest uppercase font-semibold text-md mb-3">
+            Mobile
+          </p>
+          <h2 className="font-semibold text-3xl  font-archivo mb-6">
+            Take it on the go
+          </h2>
+          <p className=" text-md font-semibold">
+            We love mobile native technologies, let your app grow for FREE
+          </p>
+          <p className="mt-3 ">
+            Native mobile apps are designed to work seamlessly with the hardware
+            and software of a particular platform, which can result in strong
+            performance and fewer maintenance issues.
+          </p>
+          <ul className="list-disc list-inside mt-8">
+            <li>Speedup development. </li>
+            <li> We use JavaScript. - Friendly to use and maintain</li>
+            <li>Requires a small dev team to start.</li>
+          </ul>
+        </div>
+      </div>
+      {/* Short Term Pricing */}
+      <div className="lg:flex w-full font-archivo h-[50vh] lg:h-[120vh] relative">
+        <div className="flex-1 bg-black text-white p-8">
+          <div className="font-semibold text-sm uppercase tracking-widest text-marketing my-4">
+            Pricing
+          </div>
+          <h2 className="font-semibold text-lg my-8">
+            A Short-Term Plan For Dynamic Business Needs
+          </h2>
+          <p className="flex-1 text-gray-400">
+            By using our services, our customers can save money in a number of
+            ways. First, we offer competitive pricing on all of our services, so
+            businesses can get the support they need at an affordable cost.
+            Additionally, our customers can save even more money by using more
+            of our services, as we offer discounts for multi-service packages.
+          </p>
+        </div>
+        <div className="flex-1 relative w-full h-full">
+          <Image
+            className="w-max h-max "
+            layout="fill"
+            alt="people designing a product in office"
+            src={"/team-gathered-in-office.jpg"}
+          />
+          <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-orange-400  via-orange-600 to-orange-500 opacity-70"></div>
+        </div>
+        <div className="absolute lg:bottom-0  top-72  lg:w-full ">
+          <div className="grid lg:grid-cols-3  md:grid-cols-1  text-white p-6  mx-auto w-full">
+            <div className="lg:max-w-xs bg-gray-700 p-6 outline-2 outline-black">
+              <h2 className="font-semibold text-md uppercase tracking-widest text-gray-100 my-4">
+                Junior
+              </h2>
+              <h1 className="font-semibold text-lg my-3 tracking-widest text-gray-100">
+                $8-13$/h approx.
+              </h1>
+              <p className="text-gray-200">
+                We are the curious ones, always learning and improving, we are
+                best suited in experienced teams.
+              </p>
+              <div className="w-full border-b border-gray-500"></div>
+              <div className="p-8">
+                <ul className="list-inside list-disc">
+                  <li>Website Building - Design & Development</li>
+                  <li>Troubleshooting</li>
+                  <li>SEO</li>
+                  <li>Admin Tasks</li>
+                  <li>Development backed by Senior or Lead</li>
+                </ul>
+                <Link
+                  href={"/"}
+                  className="inline-block uppercase border border-white mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
+                >
+                  Contract Us
+                </Link>
+                {/* Contact us button*/}
+              </div>
+            </div>
+            <div className="lg:max-w-xs bg-marketing p-6">
+              <h2 className="font-semibold text-md uppercase tracking-widest text-gray-100 my-4">
+                Senior
+              </h2>
+              <h1 className="font-semibold text-lg my-3 tracking-widest text-gray-100">
+                $19-28$/h approx.
+              </h1>
+              <p className="text-gray-200">
+                We are well balanced team with at least three years of
+                experience in the software development industry.
+              </p>
+              <div className="w-full border-b border-gray-500"></div>
+              <div className="p-8">
+                <ul className="list-inside list-disc">
+                  <li>Full - Stack development.</li>
+                  <li>Advanced Troubleshooting</li>
+                  <li>Optimization and bug fixing.</li>
+                  <li>Cloud Deployment</li>
+                  <li>Upgrading Legacy Systems</li>
+                  <li>Build Applications from ground up</li>
+                  <li>Always Backed by Tech Leader</li>
+                </ul>
+                <Link
+                  href={"/"}
+                  className="inline-block uppercase border border-black text-black bg-gray-50 mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
+                >
+                  Contract Us
+                </Link>
+                {/* Contact us button*/}
+              </div>
+            </div>
+            <div className="lg:max-w-xs  bg-black p-6">
+              <h2 className="font-semibold text-md uppercase tracking-widest text-gray-100 my-4">
+                Tech Leader
+              </h2>
+              <h1 className="font-semibold text-lg my-3 tracking-widest text-gray-100">
+                $45-59$/h approx.
+              </h1>
+              <p className="text-gray-200">
+                We are also called solution architects in the industry, our task
+                is to design and develop workflows that works best for you, so
+                that you never have to make the same mistakes by automating and
+                protecting the areas of failure.
+              </p>
+              <p className="text-gray-200">All Senior skills included; </p>
+              <p className="text-gray-200">Plus + </p>
+              <div className="w-full border-b border-gray-500"></div>
+              <div className="p-8">
+                <ul className="list-inside list-disc">
+                  <li>CI/CD Pipelines.</li>
+                  <li>High Availability & Failure Tolerant Deployments</li>
+                  <li>Automated E2E Testing.</li>
+                  <li>Security Reports</li>
+                  <li>Cost Optimization</li>
+                  <li>Budget Forecasting</li>
+                  <li>Training</li>
+                </ul>
+                <Link
+                  href={"/"}
+                  className="inline-block uppercase border border-white text-white bg-black  mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
+                >
+                  Contract Us
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
