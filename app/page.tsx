@@ -17,7 +17,7 @@ export default function Home() {
           </div>
           <div className="w-full flex justify-center items-center">
             <Link
-              href={"/"}
+              href={"/contact"}
               className="inline-block mx-auto uppercase border text-lg border-black mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
             >
               Get In Touch
@@ -350,7 +350,7 @@ export default function Home() {
                 <li>Development backed by Senior or Lead</li>
               </ul>
               <Link
-                href={"/"}
+                href={"/contact"}
                 className="inline-block uppercase border border-white mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
               >
                 Contract Us
@@ -381,7 +381,7 @@ export default function Home() {
                 <li>Always Backed by Tech Leader</li>
               </ul>
               <Link
-                href={"/"}
+                href={"/contact"}
                 className="inline-block uppercase border border-black text-black bg-gray-50 mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
               >
                 Contract Us
@@ -416,7 +416,7 @@ export default function Home() {
                 <li>Training</li>
               </ul>
               <Link
-                href={"/"}
+                href={"/contact"}
                 className="inline-block uppercase border border-white text-white bg-black  mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
               >
                 Contract Us
@@ -442,7 +442,7 @@ export default function Home() {
           </p>
           <Link
             className="inline-block hover:cursor-pointer uppercase rounded-full mx-auto w-48 mb-12 bg-black text-white text-center font-semibold p-4 border-black border-2 mt-10"
-            href={"/"}
+            href={"/contact"}
           >
             Contact Us
           </Link>
@@ -478,7 +478,7 @@ export default function Home() {
             about the improved design and functionality of the site.
           </p>
           <Link
-            href={"/"}
+            href={"/contact"}
             className="inline-block uppercase border border-white text-white bg-black mt-8 border-x-4 border-b-8 border-r-8 py-3 px-8 rounded-xl font-bold whitespace-nowrap"
           >
             Be Part Of Our Success
