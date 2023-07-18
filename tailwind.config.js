@@ -13,7 +13,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "paint-pattern": "url('/paint-pattern.png')",
         "team-image":
-          "linear-gradient(180deg,#000000 50%,rgba(246,103,31,0.7) 50%),url('/team-gathered-in-office.jpg') ",
+          "linear-gradient(90deg,#000000 50%,rgba(246,103,31,0.7) 50%),url('/team-gathered-in-office.jpg') ",
+        "team-image-mobile":
+          "linear-gradient(180deg,#000000 50%,rgba(246,103,31,0.9) 50%),url('/team-gathered-in-office.jpg')",
       },
       fontFamily: {
         archivo: ["Archivo", "Helvetica", "Arial", "Lucida", "sans-serif"],
