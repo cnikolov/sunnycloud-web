@@ -18,11 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={(inter.className, "bg-brand")}>
+      <body className={"bg-brand"}>
         <TopNavBar />
-        <div className="container mx-auto min-h-screen px-6 bg-brand">
-          {children}
-        </div>
+        <div className="container mx-auto w-[80%] bg-brand">{children}</div>
         <Footer />
       </body>
     </html>

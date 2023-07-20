@@ -1,27 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+.full-width{
+ @apply w-[100vw] relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] overflow-x-hidden;
+    }
+.sm:full-width{
+ @apply sm:w-[100vw] sm:relative sm:left-[50%] sm:right-[50%] sm:ml-[-50vw] sm:mr-[-50vw] ;
+    }
+.xl:full-width{
+  @apply xl:w-[100vw] xl:relative xl:left-[50%] xl:right-[50%] xl:ml-[-50vw] xl:mr-[-50vw] ;
+}
+.lg:full-width{
+  @apply lg:w-[100vw] lg:relative lg:left-[50%] lg:right-[50%] lg:ml-[-50vw] lg:mr-[-50vw] ;
+}
+.md:full-width{
+  @apply md:w-[100vw] md:relative md:left-[50%] md:right-[50%] md:ml-[-50vw] md:mr-[-50vw] ;
 }

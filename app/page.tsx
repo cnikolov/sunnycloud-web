@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="pt-24">
+    <main className="">
       <div className="md:flex items-center justify-center mx-auto h-screen">
         <div className="basis-1/3">
           <div className="font-semibold md:text-6xl xl:text-8xl text-4xl mb-8">
@@ -279,17 +279,17 @@ export default function Home() {
         </div>
       </div>
       {/* Mobile Features */}
-      <div className="xl:flex  py-8 mt-14 justify-center align-middle">
-        <div className="flex-1 relative w-full h-[800px] mb-9">
+      <div className="xl:flex mt-14 justify-center align-middle full-width ">
+        <div className="flex-1 relative   mb-9 xl:mb-0">
           <Image
-            className="absolute top-0 left-0 right-0 mx-auto bg-paint-pattern bg-center bg-cover"
+            className=" top-0 left-0 right-0 mx-auto bg-paint-pattern bg-center bg-cover"
             width={800}
             alt="app illustration on a mobile device"
             height={800}
             src={"/saas_mobile_001.png"}
           ></Image>
         </div>
-        <div className="flex-1 ml-9 font-archivo">
+        <div className="flex-1 xl:ml-9 mb-14 xl:mb-0 font-archivo text-center w-[80%] mx-auto xl:px-14">
           <p className="text-marketing font tracking-widest uppercase font-semibold text-md mb-3">
             Mobile
           </p>
@@ -312,7 +312,7 @@ export default function Home() {
         </div>
       </div>
       {/* Short Term Pricing */}
-      <div className="w-full font-archivo md:bg-team-image bg-team-image-mobile">
+      <div className="w-full font-archivo md:bg-team-image bg-team-image-mobile full-width overflow-x-hidden">
         <div className="flex-1 bg-black text-white p-8">
           <div className="font-semibold text-sm uppercase tracking-widest text-marketing my-4">
             Pricing
@@ -457,7 +457,7 @@ export default function Home() {
           ></Image>
         </div>
       </div>
-      <div className="w-full p-[10%] min-h-screen bg-black lg:flex justify-center items-start  mx-auto">
+      <div className="full-width p-[10%] min-h-screen bg-black lg:flex justify-center items-start  mx-auto">
         <div className="basis-1/3 lg:mb-12   text-white">
           <div className="text-marketing uppercase tracking-wider font-semibold">
             Case Studies

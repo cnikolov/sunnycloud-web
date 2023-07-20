@@ -10,7 +10,7 @@ function classNames(...classes: string[]) {
 }
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Blog", href: "/blog", current: false },
+  // { name: "Blog", href: "/blog", current: false },
   { name: "Jobs", href: "/careers", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Contact", href: "/contact", current: false },
@@ -140,34 +140,21 @@ export default function TopNavBar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-3 pt-2">
               {/* Current: "bg-indigo-50 border-blue-400 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-blue-400 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-blue-500"
-              >
-                Dashboard
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Team
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Projects
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Calendar
-              </Disclosure.Button>
+              {navigation.map((item) => (
+                <Link
+                  href={item.href}
+                  key={item.name}
+                  className={classNames(
+                    "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium",
+
+                    item.current
+                      ? "border-blue-400 text-blue-500 hover:bg-blue-50 hover:border-blue-400 hover:text-blue-500"
+                      : "text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
           </Disclosure.Panel>
         </>

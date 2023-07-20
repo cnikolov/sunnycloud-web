@@ -16,6 +16,7 @@ module.exports = {
           "linear-gradient(90deg,#000000 50%,rgba(246,103,31,0.7) 50%),url('/team-gathered-in-office.jpg') ",
         "team-image-mobile":
           "linear-gradient(180deg,#000000 50%,rgba(246,103,31,0.9) 50%),url('/team-gathered-in-office.jpg')",
+        "line-pattern": "url('/line-pattern-dark.png')",
       },
       fontFamily: {
         archivo: ["Archivo", "Helvetica", "Arial", "Lucida", "sans-serif"],
