@@ -520,7 +520,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full p-[10%] min-h-screen bg-brand  justify-center items-start  mx-auto">
+      <div className="w-full pt-8  bg-brand  justify-center items-start  mx-auto">
         <div className="text-marketing uppercase tracking-wider font-semibold text-center">
           Our Products
         </div>
