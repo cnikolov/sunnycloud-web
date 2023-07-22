@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import JoinTeamBanner from "./JoinTeamBanner";
 import { contactInfo } from "./companyInfo";
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 export default function Footer() {
