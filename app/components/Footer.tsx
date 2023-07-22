@@ -1,13 +1,35 @@
+"use client";
+import { usePathname } from "next/navigation";
 import JoinTeamBanner from "./JoinTeamBanner";
 import { contactInfo } from "./companyInfo";
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
-    <footer className="bg-black min-h-[40rem]   mt-36 sm:mt-24 lg:mt-40">
-      <div className="w-3/4 mx-auto relative">
-        <JoinTeamBanner />
-        <div className="h-72 sm:h-40 md:h-52"></div>
+    <footer
+      className={classNames(
+        "bg-black min-h-[32rem]",
+        pathname == "careers" ? "mt-12" : "mt-36 sm:mt-24 lg:mt-40"
+      )}
+    >
+      <div className="w-3/4 mx-auto relative pt-2">
+        {!pathname.includes("careers") ? (
+          <>
+            <JoinTeamBanner />
+            <div className="h-72 sm:h-40 md:h-52"></div>
+          </>
+        ) : null}
+
         <div className="mt-14">
-          <h1 className="uppercase text-md tracking-[0.2rem]  font-semibold text-white mb-2">
+          <h1
+            className={classNames(
+              "uppercase text-md tracking-[0.2rem]  font-semibold text-white mb-2"
+            )}
+          >
             Address
           </h1>
           <p className="text-md text-white">

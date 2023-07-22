@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="mt-8 sm:mt-0">
       <div className="md:flex items-center justify-center mx-auto h-screen">
         <div className="basis-1/3">
           <div className="font-semibold md:text-6xl xl:text-8xl text-4xl mb-8">
@@ -24,7 +24,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="md:ml-6 mt-12 mb-10 basis-2/3 relative h-2/4 max-w-3xl">
+        <div className="md:ml-6 mt-12 mb-10 basis-2/3 relative h-2/6 sm:h-2/4 max-w-3xl">
           <Image
             className=""
             fill={true}
