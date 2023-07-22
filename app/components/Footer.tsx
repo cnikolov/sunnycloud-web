@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-black min-h-[40rem]   mt-36 sm:mt-24 lg:mt-40">
       <div className="w-3/4 mx-auto relative">
         <JoinTeamBanner />
-        <div className="h-72 sm:h-40 md:h-32"></div>
+        <div className="h-72 sm:h-40 md:h-52"></div>
         <div className="mt-14">
           <h1 className="uppercase text-md tracking-[0.2rem]  font-semibold text-white mb-2">
             Address
