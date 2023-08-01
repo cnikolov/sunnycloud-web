@@ -28,7 +28,15 @@ export default function Contact() {
         <div className=" p-6">
           <h1 className="text-2xl font-semibold mb-4">Contact Us</h1>
           <p className="font-archivo">
-            <a href={"tel:" + contactInfo.telephone}>{contactInfo.telephone}</a>
+            <p>Julia (Polish, English) </p>
+            <a href={"tel:" + contactInfo.telephone}>
+              {contactInfo.telephone}
+            </a>{" "}
+            <br />
+            <p>Christian Dev (English, Bulgarian)</p>
+            <a href={"tel:" + contactInfo.telephone2}>
+              {contactInfo.telephone2}
+            </a>
             <br />
             <a className="text-marketing" href={"mailto:" + contactInfo.email}>
               {contactInfo.email}

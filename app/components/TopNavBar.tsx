@@ -29,13 +29,15 @@ export default function TopNavBar() {
             <div className="flex h-16 justify-between">
               <div className="flex">
                 <div className="flex flex-shrink-0 items-center">
-                  <Image
-                    className="h-12 w-auto"
-                    width={128}
-                    height={128}
-                    src={"/logo.png"}
-                    alt="Sunny Cloud Solutions"
-                  />
+                  <Link href="/">
+                    <Image
+                      className="h-12 w-auto"
+                      width={128}
+                      height={128}
+                      src={"/logo.png"}
+                      alt="Sunny Cloud Solutions"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-blue-400 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
