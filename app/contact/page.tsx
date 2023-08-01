@@ -2,7 +2,7 @@ import Image from "next/image";
 import { contactInfo } from "../components/companyInfo";
 export default function Contact() {
   return (
-    <div className="text-center mt-14 h-screen bg-brand mb-24">
+    <div className="text-center mt-14 h-screen bg-brand mb-64 sm:mb-24">
       <h1 className="text-4xl mb-12">Get In Touch</h1>
       <div className="border-2 border-black  max-w-3xl mx-auto">
         <div className="bg-gradient-to-t from-indigo-700 to-orange-600">
