@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="mt-8 sm:mt-0">
-      <div className="md:flex items-center justify-center mx-auto h-screen">
+      <div className="md:flex items-center justify-center mx-auto">
         <div className="basis-1/3">
           <div className="font-semibold md:text-6xl xl:text-8xl text-4xl mb-8">
             Build faster together.

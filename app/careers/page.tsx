@@ -2,7 +2,7 @@ import Image from "next/image";
 import { contactInfo } from "../components/companyInfo";
 export default function Careers() {
   return (
-    <div className="text-center mt-14 min:h-screen bg-brand">
+    <div className="text-center mt-14 min-h-screen bg-brand">
       <div className="">
         <div className="flex flex-col align-text-bottom justify-center">
           <h1 className="text-4xl mb-12 mt-4 text-black">Job Openings</h1>

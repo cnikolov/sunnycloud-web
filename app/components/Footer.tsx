@@ -61,7 +61,7 @@ export default function Footer() {
           <h1 className="uppercase text-md font-semibold tracking-[0.2rem] mt-5 text-white mb-2">
             Contact Us
           </h1>
-          <p className="text-md text-white mb-14">
+          <div className="text-md text-white mb-14">
             <p>Julia (Polish, English) </p>
             <a href={"tel:" + contactInfo.telephone}>{contactInfo.telephone}</a>
             <br />
@@ -71,7 +71,7 @@ export default function Footer() {
             </a>
             <br />
             <a href={"malito:" + contactInfo.email}>{contactInfo.email}</a>
-          </p>
+          </div>
         </div>
         <hr></hr>
 

@@ -2,8 +2,8 @@ import Image from "next/image";
 import { contactInfo } from "../components/companyInfo";
 export default function About() {
   return (
-    <div className="text-center mt-14 h-screen bg-brand">
-      <div className="h-[55vh] lg:mb-32">
+    <div className="text-center mt-14  bg-brand">
+      <div className=" lg:mb-32">
         <div className="bg-line-pattern bg-indigo-600  flex flex-col align-text-bottom justify-center">
           <div>
             <h1 className="text-4xl mb-12 mt-4 text-white">About Us</h1>

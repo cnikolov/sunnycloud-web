@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={"bg-brand"}>
         <TopNavBar />
-        <div className="container mx-auto w-[80%] bg-brand">{children}</div>
+        <div className="container min-h-screen mx-auto w-[80%] bg-brand">
+          {children}
+        </div>
         <Footer />
         <Analytics />
       </body>
