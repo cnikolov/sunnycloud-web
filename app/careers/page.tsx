@@ -1,5 +1,7 @@
-import Image from "next/image";
-import { contactInfo } from "../components/companyInfo";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Careers",
+};
 export default function Careers() {
   return (
     <div className="text-center mt-14 min-h-screen bg-brand">
