@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 export default function Contact() {
   return (
-    <div className="text-center mt-14  bg-brand ">
+    <main className="text-center mt-14  bg-brand ">
       <h1 className="text-4xl mb-12">Get In Touch</h1>
       <div className="border-2 border-black  max-w-3xl mx-auto">
         <div className="bg-gradient-to-t from-indigo-700 to-orange-600">
@@ -48,6 +48,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

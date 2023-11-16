@@ -4,7 +4,7 @@ export const metadata: Metadata = {
 };
 export default function Careers() {
   return (
-    <div className="text-center mt-14 min-h-screen bg-brand">
+    <main className="text-center mt-14 min-h-screen bg-brand">
       <div className="">
         <div className="flex flex-col align-text-bottom justify-center">
           <h1 className="text-4xl mb-12 mt-4 text-black">Job Openings</h1>
@@ -112,6 +112,6 @@ export default function Careers() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 export default function About() {
   return (
-    <div className="text-center mt-14  bg-brand">
+    <main className="text-center mt-14  bg-brand">
       <div className=" lg:mb-32">
         <div className="bg-line-pattern bg-indigo-600  flex flex-col align-text-bottom justify-center">
           <div>
@@ -48,6 +48,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
