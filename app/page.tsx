@@ -315,7 +315,7 @@ export default function Home() {
         </div>
       </div>
       {/* Short Term Pricing */}
-      <div className="w-full font-archivo md:bg-team-image bg-team-image-mobile full-width overflow-x-hidden">
+      {/* <div className="w-full font-archivo md:bg-team-image bg-team-image-mobile full-width overflow-x-hidden">
         <div className="flex-1 bg-black text-white p-8">
           <div className="font-semibold text-sm uppercase tracking-widest text-marketing my-4">
             Pricing
@@ -359,7 +359,7 @@ export default function Home() {
                 Contract Us
               </Link>
               {/* Contact us button*/}
-            </div>
+      {/*</main>       </div>
           </div>
           <div className="xl:max-w-xs max-w-2xl bg-marketing p-6">
             <h2 className="font-semibold text-md uppercase tracking-widest text-gray-100 my-4">
@@ -390,7 +390,7 @@ export default function Home() {
                 Contract Us
               </Link>
               {/* Contact us button*/}
-            </div>
+      {/*  </div>
           </div>
           <div className="xl:max-w-xs max-w-2xl  bg-black p-6">
             <h2 className="font-semibold text-md uppercase tracking-widest text-gray-100 my-4">
@@ -427,7 +427,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="lg:flex w-full font-archivo relative">
         {/* Competitive Offerings */}
         <div className="w-full h-1/2 font-archivo  pt-32 text-center bg-brand">

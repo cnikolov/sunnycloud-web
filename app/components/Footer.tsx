@@ -16,7 +16,7 @@ export default function Footer() {
         pathname == "careers" ? "mt-12" : "mt-36 sm:mt-24 lg:mt-40"
       )}
     >
-      <div className="w-3/4 mx-auto relative pt-2">
+      {/* <div className="w-3/4 mx-auto relative pt-2">
         {!pathname.includes("careers") ? (
           <>
             <JoinTeamBanner />
@@ -79,7 +79,7 @@ export default function Footer() {
           Copyright © 2020-2023 Sunny Cloud Solutions Company Registration VAT
           BG206629258
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

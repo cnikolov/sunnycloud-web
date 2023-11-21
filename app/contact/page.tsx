@@ -31,7 +31,7 @@ export default function Contact() {
         </p>
         <div className="p-6">
           <h1 className="text-2xl font-semibold mb-4">Contact Us</h1>
-          <div className="font-archivo">
+          {/* <div className="font-archivo">
             <p>Julia (Polish, English) </p>
             <a href={"tel:" + contactInfo.telephone}>
               {contactInfo.telephone}
@@ -45,7 +45,7 @@ export default function Contact() {
             <a className="text-marketing" href={"mailto:" + contactInfo.email}>
               {contactInfo.email}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
