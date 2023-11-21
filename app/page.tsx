@@ -133,7 +133,7 @@ export default function Home() {
               <li>Analyze and attribute expenditure</li>
             </ul>
           </div>{" "}
-          <div
+          {/* <div
             className=" flex-1 flex-col 
           md:flex-row bg-marketing px-8 pt-6 "
           >
@@ -156,7 +156,7 @@ export default function Home() {
               <p className="text-8xl">1,2M</p>
               <p className="text-xl">Consents a day.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Company Logos */}
