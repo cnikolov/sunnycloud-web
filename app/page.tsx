@@ -460,7 +460,7 @@ export default function Home() {
           ></Image>
         </div>
       </div>
-      <div className="full-width p-[10%] min-h-screen bg-black lg:flex justify-center items-start  mx-auto">
+      {/* <div className="full-width p-[10%] min-h-screen bg-black lg:flex justify-center items-start  mx-auto">
         <div className="basis-1/3 lg:mb-12   text-white">
           <div className="text-marketing uppercase tracking-wider font-semibold">
             Case Studies
@@ -522,8 +522,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-full pt-8  bg-brand  justify-center items-start  mx-auto">
+      </div> */}
+      {/* <div className="w-full pt-8  bg-brand  justify-center items-start  mx-auto">
         <div className="text-marketing uppercase tracking-wider font-semibold text-center">
           Our Products
         </div>
@@ -587,7 +587,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
